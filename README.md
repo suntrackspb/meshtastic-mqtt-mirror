@@ -1,5 +1,15 @@
 # OneMesh Mirror
 
+![Python](https://img.shields.io/badge/Python-3.14-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.111-009688?logo=fastapi&logoColor=white)
+![Vue](https://img.shields.io/badge/Vue-3-4FC08D?logo=vuedotjs&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-7-DC382D?logo=redis&logoColor=white)
+![ClickHouse](https://img.shields.io/badge/ClickHouse-analytics-FFCC01?logo=clickhouse&logoColor=black)
+![Meshtastic](https://img.shields.io/badge/Meshtastic-LoRa%20mesh-1A2E44?logo=lora&logoColor=white)
+![License](https://img.shields.io/badge/license-AGPL--3.0-green)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
+
 Веб-платформа для мониторинга и взаимодействия с LoRa mesh-сетью [Meshtastic](https://meshtastic.org/) в Санкт-Петербурге и области (сеть **OneMesh**, канал `msh/RU/SPB`).
 
 Проект слушает трафик mesh-сети через MQTT, декодирует протобаф-пакеты прошивки Meshtastic, сохраняет данные в базу и отдаёт их через веб-интерфейс в реальном времени: карта узлов, живой чат, лидерборды, traceroute-графы, а также публичное API для сторонних интеграций. Отдельный бот обслуживает служебный канал сети, отвечая на команды как по радио, так и через веб-сокет мониторинга.
